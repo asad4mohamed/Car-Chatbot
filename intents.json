@@ -1,52 +1,172 @@
-{"intents": [
-    {"tag": "greeting",
-     "patterns": ["Hi there!", "How are you?", "Is anyone there?",
-                  "Hey!","Hola!", "Hello!"],
-     "responses": ["Hello, thanks for asking!", "Good to see you.", 
-                   "Hi there, how can I help?"]
-    },
-    {"tag": "goodbye",
-     "patterns": ["Bye.", "See you later!", "Goodbye!", 
-                  "Nice chatting to you, bye.", "Till next time!!"],
-     "responses": ["See you!", "Have a nice day.", "Bye! Come back again soon."]
-    },
-    {"tag": "thanks",
-     "patterns": ["Thanks!", "Thank you", "That's helpful", 
-                  "Awesome, thanks", "Thanks for helping me"],
-     "responses": ["Happy to help!", "Any time!", "My pleasure."]
-    },
-    {"tag": "noanswer",
-     "patterns": [""],
-     "responses": ["Sorry, can't understand you", "Please give me more info", 
-                   "Not sure I understand"]
-    },
-    {"tag": "options",
-     "patterns": ["I am bored today!", "What you can do?",
-                  "I don't know what to do", "What help you provide?", 
-                  "How you can be helpful?", "What support is offered"],
-     "responses": ["I can guide you through an activity to spend the day. What's your hobby?", 
-                   "we can plan out for a daily activity. what would you like doing?"]
-    },
-    {"tag": "art",
-        "patterns": ["I like art", "I like craft", "art and craft", "drawing", "sketching?", "painting"],
-        "responses": ["you can draw a geometric art and color it!!","you can sketch a scenery today.", 
-                      "Try Dotted Mandala art today!"]
-    },
-    {"tag": "music",
-        "patterns": ["I like music", "I like songs", "songs and music", "pop"],
-        "responses": ["you can listen to songs on FM radio",
-                      "You can record a video to post on social media website"]
-    },
-   
-    {"tag": "cooking",
-            "patterns": ["I like cooking", "I like baking", "eating pizza", "cooking","food"],
-            "responses": ["you can try baking a cake today!","You can cook a pizza today"]},
-     
-    {"tag": "fitness",
-        "patterns": ["I like to work out", "I like aerobics", "exercise"],
-        "responses": ["you can try zumba dance today !","You can try pilates today"]},
-
-    {"tag": "travel",
-        "patterns": ["I like to travel", "I like exploring different places", "travelling"],
-        "responses": ["you can visit a zoo today!","You can visit an amusement park today"]}         
-]}
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi there!",
+          "Hello!",
+          "Good morning!",
+          "Hey!",
+          "What's up?",
+          "Greetings!"
+        ],
+        "responses": [
+          "Welcome to our showroom! How can I assist you today?",
+          "Hello! What brings you here today?",
+          "Hi! Looking for a new car? I'm here to help."
+        ]
+      },
+      {
+        "tag": "car_inquiry",
+        "patterns": [
+          "Tell me about your cars",
+          "What models do you have?",
+          "Do you have electric cars?",
+          "What are your latest models?",
+          "Show me your SUVs",
+          "What cars are available?",
+          "What are some hyper cars"
+        ],
+        "responses": [
+          "We have a variety of models, including sedans, SUVs, and electric cars. Would you like to know about a specific type?",
+          "Our latest models include the XYZ sedan, ABC SUV, and DEF electric car. Interested in one?",
+          "We offer compact cars, family vehicles, and luxury models. What type are you looking for?"
+        ]
+      },
+      {
+        "tag": "pricing",
+        "patterns": [
+          "What is the price of the XYZ model?",
+          "How much does the ABC SUV cost?",
+          "Can you give me pricing details?",
+          "What are your price ranges?",
+          "Do you have any discounts or offers?",
+          "What's the cost of the DEF electric car?"
+        ],
+        "responses": [
+          "The XYZ model starts at $30,000. Would you like to know about financing options?",
+          "The ABC SUV is priced at $45,000. Are you interested in a test drive?",
+          "Our prices range from $20,000 to $70,000, depending on the model and features."
+        ]
+      },
+      {
+        "tag": "test_drive",
+        "patterns": [
+          "Can I schedule a test drive?",
+          "I'd like to test drive a car",
+          "How do I book a test drive?",
+          "Is it possible to test drive the XYZ model?",
+          "Can you help me arrange a test drive?",
+          "I want to take a car for a spin!"
+        ],
+        "responses": [
+          "Of course! Please provide me with the model you'd like to test drive and your preferred date and time.",
+          "You can schedule a test drive by telling me the model and your contact details.",
+          "Absolutely! Which model are you interested in, and when would you like to come in?"
+        ]
+      },
+      {
+        "tag": "financing",
+        "patterns": [
+          "Do you offer financing?",
+          "What financing options are available?",
+          "Can I get a loan for a car?",
+          "What are the payment plans?",
+          "Are there any special financing deals?",
+          "How do I apply for financing?"
+        ],
+        "responses": [
+          "Yes, we offer several financing options. Would you like to hear more about them?",
+          "We have partnerships with multiple banks for car loans. Would you like assistance with that?",
+          "We can help you find a financing plan that fits your budget. Let's discuss your options."
+        ]
+      },
+      {
+        "tag": "car_features",
+        "patterns": [
+          "What features does the XYZ model have?",
+          "Tell me about the safety features",
+          "Does the ABC SUV have a sunroof?",
+          "What technology is in the DEF electric car?",
+          "Are there any special features in your cars?",
+          "What kind of warranty do you offer?"
+        ],
+        "responses": [
+          "The XYZ model includes advanced safety features like lane assist and adaptive cruise control.",
+          "Yes, the ABC SUV comes with a sunroof and premium audio system. Would you like more details?",
+          "The DEF electric car has a range of 300 miles on a single charge, plus a spacious interior."
+        ]
+      },
+      {
+        "tag": "location_hours",
+        "patterns": [
+          "What are your showroom hours?",
+          "Where are you located?",
+          "How can I get to your showroom?",
+          "What's your address?",
+          "Are you open on weekends?",
+          "When can I visit you?"
+        ],
+        "responses": [
+          "We are open Monday to Saturday from 9 AM to 7 PM. We're located at 123 Car St, Auto City.",
+          "You can find us at 123 Car St, Auto City. Our showroom hours are from 9 AM to 7 PM.",
+          "Yes, we're open on weekends! Come visit us anytime between 9 AM and 7 PM."
+        ]
+      },
+      {
+        "tag": "service_inquiry",
+        "patterns": [
+          "Do you offer maintenance services?",
+          "How can I schedule a service appointment?",
+          "What services do you provide?",
+          "Can I get my car serviced here?",
+          "Tell me about your maintenance plans."
+        ],
+        "responses": [
+          "Yes, we offer a range of maintenance services. Would you like to schedule an appointment?",
+          "We provide regular maintenance, repairs, and inspections. Let me know what you need!",
+          "To schedule a service appointment, please provide your car model and preferred date."
+        ]
+      },
+      {
+        "tag": "thank_you",
+        "patterns": [
+          "Thanks for the info!",
+          "Thank you for your help",
+          "I appreciate your assistance.",
+          "You've been very helpful!",
+          "Thanks for answering my questions."
+        ],
+        "responses": [
+          "You're welcome! If you have any more questions, feel free to ask.",
+          "Happy to help! Let me know if there's anything else you need.",
+          "I'm glad I could assist! Don't hesitate to reach out again."
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Goodbye!",
+          "See you later!",
+          "Thanks, that's all for now.",
+          "I have to go now.",
+          "Catch you later!"
+        ],
+        "responses": [
+          "Goodbye! Have a great day!",
+          "See you soon! Feel free to reach out anytime.",
+          "Take care! Looking forward to helping you again."
+        ]
+      },
+      {
+        "tag": "noanswer",
+        "patterns": [""],
+        "responses": [
+          "I'm sorry, I didn't understand that. Can you please rephrase?",
+          "Could you provide more details?",
+          "I'm here to help, but I didn't quite get that."
+        ]
+      }
+    ]
+  }
+  
